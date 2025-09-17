@@ -46,8 +46,14 @@ function jogo() {
     var colisao = {y: pos.y, x: pos.x}
     var colisaoX = []
     var colisaoY = []
-    var pcx = 30[pc.x, pc.x+pc.x, pc.x+pc.x*2, pc.x+pc.x*3, pc.x+pc.x*4, pc.x+pc.x*5, pc.x+pc.x*6, pc.x+pc.x*7, pc.x+pc.x*8, pc.x+pc.x*9, pc.x+pc.x*10, pc.x+pc.x*11, pc.x+pc.x*12, pc.x+pc.x*13, pc.x+pc.x*14, pc.x+pc.x*15, pc.x+pc.x*16, pc.x+pc.x*17, pc.x+pc.x*18, pc.x+pc.x*19, pc.x+pc.x*20, pc.x+pc.x*21, pc.x+pc.x*22, pc.x+pc.x*23, pc.x+pc.x*24, pc.x+pc.x*25, pc.x+pc.x, pc.x+pc.x, pc.x+pc.x, pc.x+pc.x]
-    var pcy = 20[]
+    var pcx = []
+    for (var index = 0; index < 30; index++) {
+        pcx.push(pc.x * index)
+    }
+    var pcy = []
+    for (var linha = 0; linha < 20; linha++) {
+        pcy.push(pc.y * linha)
+    }
     
     //var objPcs = {ld: function ld(), le: le(), i: i(), quadrado: quadrado(), s: s(), z: z(), t: t()}
     
